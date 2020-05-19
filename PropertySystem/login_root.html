@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache"> 
+<meta http-equiv="Expires" content="0"> 
+<title>后台管理</title>
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background:url(images/bg.jpg) no-repeat; ">
+<div class="login_box">
+      <!-- <div class="login_l_img"><img src="images/admin.jpg" /></div> -->
+      <div class="login">
+          <div class="login_logo"><a href="#"><img src="images/login_logo.png" /></a></div>
+          <div class="login_name">
+               <p>管理员后台系统</p>
+          </div>
+          <form action="login_root.php" method="post">
+              <input name="username" type="text"  value="用户名" onfocus="this.value=''" onblur="if(this.value==''){this.value='用户名'}">
+              <span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='block';document.getElementById('password').focus().select();" >密码</span>
+              <input name="password" type="password" id="password" style="display:none;" onblur="if(this.value==''){document.getElementById('password_text').style.display='block';this.style.display='none'};"/>
+              <input value="登录" style="width:100%;margin-bottom: 5px;" type="submit" >
+              <div >
+                  <a href="create_user.php" title="注册页面" style="font-size:20px;text-decoration:none;
+                        " target="_blank" >去注册</a>
+
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                  <a href="login.html" title="用户登录" target="_blank" style="font-size:20px;">去用户登录</a>
+              </div>
+          </form>
+      </div> 
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- 登陆界面 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache"> 
+<meta http-equiv="Expires" content="0"> 
+<title>社区物业管理系统</title>
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+	<style>
+		strong{font-size: 20px;}
+		.copyright{font-size: 15px;}
+	</style>
+</head>
+<body style="background:url(images/bg.jpg) no-repeat; ">
+
+<div class="login_box">
+      <!-- <div class="login_l_img"><img src="images/bg.jpg" /></div> -->
+      <div class="login">
+          <div class="login_logo"><a href="#"><img src="images/login_logo.png" /></a></div>
+          <div class="login_name">
+               <p>社区物业管理系统</p>
+          </div>
+		  <div>
+          <form action="check.php" method="post">
+			  <!--<strong>用户：</strong><input type="radio" name="identity" value="1" checked="checked"> -->
+			  <!--<strong>管理员：</strong><input type="radio" name="identity" value="2">-->
+              <input name="username" type="text"  value="用户名" onfocus="this.value=''"
+                     onblur="if(this.value==''){this.value='用户名'}"></div>
+              <span id="password_text" onclick="this.style.display='none';document.getElementById('password').style.display='block';document.getElementById('password').focus().select();" >密码</span>
+<input name="password" type="password" id="password" style="display:none;" onblur="if(this.value==''){document.getElementById('password_text').style.display='block';this.style.display='none'};"/>
+              <input value="登录" style="font-size:22px;" style="width:100%;" type="submit">
+
+               <div >
+                   <a href="create_user.php" title="注册页面" style="font-size:20px;text-decoration:none;
+                        " target="_blank" >去注册</a>
+
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                   <a href="login_root.html" title="管理员登录" target="_blank" style="font-size:20px;">去管理员登录</a>
+               </div>
+          </form>
+		  </div>
+</body>
+</html>

@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    color: #666;
+}
+
+header {
+    margin: 0 auto;
+    color: #222;
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.wid_limit {
+    width: 980px;
+}
+
+.top_wrapper:after {
+    content:"";
+    display:block;
+    visibility:hidden;
+    clear:both;
+    height:0;
+}
+
+.up_box:after {
+    content:"";
+    display:block;
+    visibility:hidden;
+    clear:both;
+    height:0;
+}
+
+.top_nav {
+    position: relative;
+    height: 42px;
+    z-index: 200;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+
+.top_button {
+    display: inline;
+    float: left;
+}
+
+.top_button>div {
+    float: left;
+    text-align: center;
+    line-height: 42px;
+    height: 42px;
+    position: relative;
+    background-color: hsla(0,0%,100%,0);
+    transition: all .3s;
+    display: inline;
+    margin-left: -10px;
+    padding-left: 12px;
+}
+
+.top_button>div>a {
+    height: 100%;
+    display: block;
+    padding: 0 11px;
+    padding-left: 20px;
+}
+
+
+.top_button>div>a>i{
+    background-image: url(../img/icons.png);
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    left: 10px;
+    top: 13px;
+    background-position: -919px -88px;
+}
+
+.up_button {
+    float: right;
+    position: relative;
+    width: 58px;
+    height: 42px;
+}
+
+.up_button>a {
+    display: block;
+    width: 100%;
+    height: 48px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-image: url(../img/up_button.png);
+}
+
+.up_button:hover .up_box {
+    display: block;
+}
+
+.up_box {
+    display: none;
+    position: absolute;
+    top: 57px;
+    border-radius: 0 0 4px 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.16);
+    border: 1px solid #e5e9ef;
+    text-align: center;
+    font-size: 12px;
+    width: 144px;
+    margin-left: -87px;
+}
+
+.up_box li {
+    cursor: pointer;
+    text-align: center;
+    width: 72px;
+    height: 64px;
+    transition: .2s;
+    float: left;
+    position: relative;
+    background: #fff;
+}
+
+.up_box li:hover {
+    background: #e5e9ef;
+}
+
+.up_box i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 15px auto 2px;
+    transition: .2s;
+    background-image: url(../img/icons.png);
+}
+
+.up_box li:hover i {
+    transform: translateY(-2px);
+}
+
+.up_box span {
+    color: #f25d8e;
+}
+
+.up_video i{
+    background-position: -471px -919px;
+}
+
+.up_manage i{
+    background-position: -471px -982px;
+}
+
+
+.top_img {
+    background: #00a0d8;
+    height: 86px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.div_line {
+	width: 980px;
+    height: 28px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 28px;
+}
+
+
+.div_line>span {
+    font-size: 38px;
+    background-color: white;
+    padding: 0 20px;
+    margin: 0 auto;
+    height: 56px;
+    line-height: 56px;
+}
+
+.main_part {
+	width: 980px;
+    position: relative;
+    height: 325px;
+    margin: 0 auto;
+}
+
+.left_part {
+	float: left;
+	width: 480px;
+}
+
+.left_part i {
+	position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 160px;
+    top: 10px;
+    background: url(../img/tv.png) no-repeat;
+}
+
+.left_part_header {
+	padding-top: 72px;
+}
+
+.left_part_header>div {    
+	width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left_part_footer{
+    width: 480px;
+    height: 155px;
+    background: url(../img/sign/chara.png) 0 -7px no-repeat;
+}
+
+.left_part_footer>a>p:first-child {
+	padding-top: 20px;
+    text-align: center;
+    color: #222;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.left_part_footer>a>p:last-child {
+	text-align: center;
+    color: #717171;
+    font-size: 14px;
+    transition: color .2s;
+}
+
+.left_part_footer>a:hover>p:last-child {
+	color: #f25d8e;
+}
+
+.mid_line {
+	margin: 0 0 0 50%;;
+	position: absolute;
+    top: 28px;
+    height: 300px;
+    border-right: 1px solid #ddd;
+}
+
+.right_part {
+	float: right;
+	padding-right: 35px;
+}
+
+.input_box {
+    padding-top: 47px;
+}
+
+.input_box>ul>li>div:not(.code_block) {
+    margin: 6px 0px 6px 4px;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+.input_box>ul>li {
+	position: relative;
+}
+
+.input_box>ul>li>span {
+    background: url(../img/sign/icons.png) no-repeat -37px -38px;
+    position: absolute;
+    top: 8px;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+}
+
+.input_box>ul>li>input {
+	outline: none;
+    width: 388px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    color: #aaa;
+    font-size: 14px;
+    padding: 10px;
+    height: 18px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.button_box {
+	margin-top: 10px;
+}
+
+.button_box>a {
+	display: inline-block;
+    height: 36px;
+    width: 184px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+#code {
+    display: inline-block;
+    width: 163px;
+}
+
+.code_block {
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    right: 49px;
+    cursor: pointer;
+}
+
+
+#code_error {
+    right: 200px;
+}
+
+.normal {
+    border-color: #ddd;
+}
+
+.normal+span {
+    display: none;
+}
+
+.error {
+    border-color: #f45d90;
+}
+
+.error+span{
+    display: block;
+}
+
+.mas_p {
+    color: #f45d90;
+}
+
+.submit_bnt {
+	border: 1px solid #0381aa;
+    color: #fff;
+    background-color: #00a7de;
+    margin-right: 34px;
+}
+
+.submit_bnt:hover {
+	background: #00bee7;
+}
+
+.log_bnt:hover {
+    background: #f7f7f7;
+}
+
+footer {
+    margin: 150px auto 20px;
+    width: 100%;
+    color: #99a2aa;
+    text-align: center;
+    font-size: 12px;
+}
+footer p {
+    border-top: lightskyblue solid 2px;
+    display: inline;
+    padding-top: 2px;
+}

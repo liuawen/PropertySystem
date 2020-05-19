@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* class 选择器 */
+.header {
+    overflow: hidden ;
+    background: #FFFFFF;
+}
+
+/* 亲子选择器 ( 直接子元素选择器 ) */
+.header>.status-container {
+    height: 30px ;
+    background: #f8f8f8;
+    border-bottom: 1px solid #eeeeee ;
+}
+
+/* 后代选择器 ( 子孙选择器 ) */
+.header .status-container .status {
+    float: left ;
+    width: 40%;
+    line-height: 30px ;
+}
+
+.header .status-container .operations {
+    float: right ;
+    width: 60% ;
+    text-align: right ;
+}
+
+/* 通配符 */
+.header .status-container .operations>* {
+    float: right ;
+    height: 30px ;
+    line-height: 30px ;
+}
+
+.header .status-container .operations>i {
+    /* border-left: 1px solid #dedede; */
+    border-right: 1px solid #eeeeee ;
+}
+
+.header .status-container .operations>a {
+    text-decoration: none ;
+    padding: 0 5px ;
+}
+
+.header .status-container .operations>a:hover {
+    background: yellow;
+}
+
+/*.header .logo { height: 80px ; }*/
+
